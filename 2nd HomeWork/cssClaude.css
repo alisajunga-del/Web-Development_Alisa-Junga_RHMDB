@@ -21,6 +21,7 @@ body {
     "ad"
     "text"
     "info"
+    "boxes"
     "footer";
   grid-template-columns: 1fr;
   gap: 20px;
@@ -106,6 +107,30 @@ header {
   margin-bottom: 10px;
 }
 
+/* Boxes container */
+.container {
+  grid-area: boxes;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.boxy {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.boxy:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
 /* Footer */
 footer {
   grid-area: footer;
@@ -145,10 +170,15 @@ footer {
       "ad"
       "text"
       "info"
+      "boxes"
       "footer";
   }
 
   .info {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .container {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -160,12 +190,17 @@ footer {
       "header header"
       "hero ad"
       "text info"
+      "boxes boxes"
       "footer footer";
     grid-template-columns: 2fr 1fr;
   }
 
   .info {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -178,4 +213,9 @@ footer {
   .info {
     grid-template-columns: 1fr;
   }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
 }
+
