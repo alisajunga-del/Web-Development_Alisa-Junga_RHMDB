@@ -107,8 +107,8 @@ header {
   margin-bottom: 10px;
 }
 
-/* Boxes container */
-.container {
+/* Boxes container с уникальным классом */
+.boxes-container {
   grid-area: boxes;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -163,22 +163,11 @@ footer {
 
 /* Tablet <992px */
 @media (min-width: 576px) and (max-width: 991px) {
-  body {
-    grid-template-areas:
-      "header"
-      "hero"
-      "ad"
-      "text"
-      "info"
-      "boxes"
-      "footer";
-  }
-
   .info {
     grid-template-columns: 1fr 1fr;
   }
 
-  .container {
+  .boxes-container {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -199,7 +188,7 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .container {
+  .boxes-container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -214,8 +203,9 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .container {
+  .boxes-container {
     grid-template-columns: 1fr;
   }
 }
+
 
