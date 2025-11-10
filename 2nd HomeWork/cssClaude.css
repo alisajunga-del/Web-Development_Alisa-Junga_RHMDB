@@ -1,4 +1,4 @@
-/* Elegant text style */
+/* Elegant text */
 .elegant-text {
   font-family: 'Great Vibes', cursive;
   font-size: 50px;
@@ -8,7 +8,7 @@
   margin: 0 auto 20px auto;
 }
 
-/* Hero Image */
+/* Hero image */
 .hero img {
   width: 100%;
   border-radius: 8px;
@@ -16,11 +16,10 @@
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* Ad block */
+/* Ad */
 .ad {
   text-align: center;
 }
-
 .ad img {
   max-width: 100%;
   border-radius: 8px;
@@ -28,14 +27,14 @@
 }
 
 /* Boxes container */
-.boxes-container {
+.container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin: 20px 0;
 }
 
-/* Individual boxes */
+/* Individual box */
 .boxy {
   background-color: #fff;
   padding: 15px;
@@ -43,12 +42,10 @@
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   transition: transform 0.2s, box-shadow 0.2s;
 }
-
 .boxy:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
-
 .boxy img {
   max-width: 100%;
   border-radius: 8px;
@@ -66,21 +63,17 @@ footer {
 }
 
 /* Responsive grid */
-
-/* Tablet <992px */
 @media (max-width: 991px) {
-  .boxes-container {
+  .container {
     grid-template-columns: 1fr 1fr;
   }
 }
-
-/* Mobile <576px */
 @media (max-width: 575px) {
-  .boxes-container {
+  .container {
     grid-template-columns: 1fr;
   }
-  
   .elegant-text {
     font-size: 36px;
   }
 }
+
