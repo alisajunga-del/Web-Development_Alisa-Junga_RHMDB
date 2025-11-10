@@ -1,52 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-     <meta charset="UTF-8">
-     <meta name="description" content="Claude Monet - a French painter and founder of impressionism painting">
-     <meta name="Author" content="Alisa Junga">
-<title>Claude Monet "The richness I achieve comes from nature, the source of my inspiration."</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claude Monet - Impressionist Painter</title>
   <style>
-    .elegant-text {
-      font-family: 'Great Vibes', cursive;
-      font-size: 60px;
-      color: #d4af37;
-      text-shadow: 2px 2px 8px rgba(212, 175, 55, 0.5);
-      letter-spacing: 2px;
-      text-align: center; 
-      display: block;
-      margin: 0 auto; 
-    }
-
     body {
       font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 20px;
-      background: linear-gradient(135deg, #f8f8f8, #eaeaea);
+      background-color: #f4f4f4;
       color: #333;
-      animation: fadeIn 2s ease-in;
+      margin: 0;
+      padding: 0;
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+    .elegant-text {
+      font-family: 'Great Vibes', cursive;
+      font-size: 50px;
+      color: #d4af37;
+      text-align: center;
+      margin: 20px 0;
     }
 
-    h1, h2, h3, h4 {
+    header, footer {
+      text-align: center;
+      padding: 15px;
       background-color: #2c3e50;
       color: white;
-      text-align: center;
-      border-radius: 8px;
-      padding: 10px;
     }
 
-    img {
-      max-width: 100%;
-      height: auto;
+    .hero img, .ad img {
+      width: 100%;
+      max-width: 600px;
       display: block;
       margin: 20px auto;
       border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      animation: fadeIn 2s ease-in;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    /* Boxes container */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .boxy {
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .boxy img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
     }
 
     a {
@@ -58,37 +69,59 @@
       text-decoration: underline;
     }
 
-    footer {
-      text-align: center;
-      padding: 10px;
-      background-color: #2c3e50;
-      color: white;
-      margin-top: 20px;
-      border-radius: 8px;
+    @media (max-width: 575px) {
+      .elegant-text {
+        font-size: 36px;
+      }
     }
   </style>
-  </head>
+</head>
+<body>
 
-  <body>
+  <!-- Header -->
+  <header>
+    <h1 class="elegant-text">Claude Monet "The richness I achieve comes from nature, the source of my inspiration."</h1>
+  </header>
+
+  <!-- Hero Image -->
+  <div class="hero">
     <img src="https://www.claude-monet.com/assets/img/claude-monet.jpg" alt="Claude Monet">
-    <h1 class="elegant-text">
-      Claude Monet "The richness I achieve comes from nature, the source of my inspiration."
-    </h1> 
+  </div>
 
-    <main>
-      <h2>Claude Monet Biography</h2>
-      <p>Recognized as the 'Father of Impressionism', Claude Monet (1840 - 1926) instigated one of the most important artistic movements in history...</p>
+  <!-- Ad / Cat Image -->
+  <div class="ad">
+    <img src="https://placekitten.com/300/200" alt="Ad / Cat Picture">
+  </div>
 
-      <!-- 🔵 ВНЕШНЯЯ ССЫЛКА -->
-      <p>Learn more about 
-        <a href="https://www.claude-monet.com" target="_blank">Claude Monet</a>.
-      </p>
+  <!-- Boxes container -->
+  <div class="container">
+    <div class="boxy">
+      <h2>Biography</h2>
+      <p>Recognized as the 'Father of Impressionism', Claude Monet (1840 - 1926) instigated one of the most important artistic movements in history.</p>
+    </div>
 
-      <h3 id="paintings">Claude Monet Paintings</h3>
-      <p>Most well-known today for his series of serene water lilies paintings...</p>
+    <div class="boxy">
+      <h2>Early Life</h2>
+      <p>Claude Monet was born in Paris. He began drawing as a boy and studied under landscape artist Eugene Bodin.</p>
+    </div>
 
-      <!-- 🔹 УПОРЯДОЧЕННЫЙ СПИСОК -->
-      <h4>Famous Paintings Series by Monet</h4>
+    <div class="boxy">
+      <h2>Impressionism</h2>
+      <p>Monet painted outdoors to capture changing light and color. Impressionism was made possible thanks to paint in tubes.</p>
+    </div>
+
+    <div class="boxy">
+      <h2>Artistic Techniques</h2>
+      <ul>
+        <li>Painting outdoors (en plein air)</li>
+        <li>Capturing changing light and color</li>
+        <li>Visible brushstrokes</li>
+        <li>Layering paint for texture</li>
+      </ul>
+    </div>
+
+    <div class="boxy">
+      <h2>Famous Paintings</h2>
       <ol>
         <li>Water Lilies</li>
         <li>Haystacks</li>
@@ -96,34 +129,23 @@
         <li>Houses of Parliament</li>
         <li>Japanese Bridge</li>
       </ol>
+    </div>
 
-      <!-- 🔸 НЕУПОРЯДОЧЕННЫЙ СПИСОК -->
-      <h4>Monet’s Artistic Techniques</h4>
-      <ul>
-        <li>Painting outdoors (en plein air)</li>
-        <li>Capturing changing light and color</li>
-        <li>Using visible brushstrokes</li>
-        <li>Layering paint for texture</li>
-      </ul>
+    <div class="boxy">
+      <h2>San Giorgio Maggiore at Dusk</h2>
+      <img src="https://www.claude-monet.com/assets/img/paintings/san-giorgio-maggiore-at-dusk.jpg" alt="San Giorgio Maggiore at Dusk">
+    </div>
 
-      <h4>Painting "San Giorgio Maggiore at Dusk, 1908 by Claude Monet"</h4>
-      <img src="https://www.claude-monet.com/assets/img/paintings/san-giorgio-maggiore-at-dusk.jpg" alt="San Giorgio Maggiore at Dusk, 1908 by Claude Monet">
-      <p>San Giorgio Maggiore at Dusk is an oil painting by Claude Monet that was painted in 1908...</p>
+    <div class="boxy">
+      <h2>Water Lilies</h2>
+      <img src="https://www.claude-monet.com/assets/img/paintings/water-lilies-claude-monet.jpg" alt="Water Lilies">
+    </div>
+  </div>
 
-      <h4>"These landscapes of water and reflection have become an obsession..."</h4>
-      <img src="https://www.claude-monet.com/assets/img/paintings/water-lilies-claude-monet.jpg" alt="Water Lilies, 1916 by Claude Monet">
+  <!-- Footer -->
+  <footer>
+    <p>All information is taken from <a href="https://www.claude-monet.com">Claude-Monet</a>.</p>
+  </footer>
 
-      <!-- 🔗 ВНУТРЕННЯЯ ССЫЛКА -->
-      <p style="text-align:center;">
-        <a href="#footer">Go to Footer ↓</a>
-      </p>
-    </main>
-
-    <footer id="footer">
-      <p>All information is taken from 
-        <a href="https://www.claude-monet.com" target="_blank">Claude Monet</a> website.
-      </p>
-      <p><a href="#paintings">Back to Paintings ↑</a></p>
-    </footer>
-  </body>
+</body>
 </html>
