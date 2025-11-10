@@ -1,3 +1,4 @@
+/* Elegant text style */
 .elegant-text {
   font-family: 'Great Vibes', cursive;
   font-size: 60px;
@@ -9,6 +10,7 @@
   margin: 0 auto; 
 }
 
+/* Body and layout */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -26,15 +28,17 @@ body {
   gap: 20px;
 }
 
+/* Header */
 header, h1, h2, h3, h4 {
   grid-area: header;
+  text-align: center;
   background-color: #2c3e50;
   color: white;
-  text-align: center;
   padding: 10px;
   border-radius: 8px;
 }
 
+/* Main content */
 main {
   grid-area: main;
   background-color: #fff;
@@ -43,6 +47,7 @@ main {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
+/* Advertisement block */
 .ad {
   grid-area: ad;
   background-color: #e0e0e0;
@@ -57,6 +62,7 @@ main {
   margin: 10px 0;
 }
 
+/* Images */
 img {
   max-width: 100%;
   height: auto;
@@ -66,6 +72,7 @@ img {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+/* Links */
 a {
   color: #3498db;
   text-decoration: none;
@@ -75,6 +82,7 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Footer */
 footer {
   grid-area: footer;
   text-align: center;
@@ -84,6 +92,7 @@ footer {
   border-radius: 8px;
 }
 
+/* Back-to-top button */
 .back-to-top {
   display: inline-block;
   margin: 10px 0;
@@ -101,6 +110,7 @@ footer {
   transform: scale(1.05);
 }
 
+/* CTA button */
 .cta {
   display: inline-block;
   margin-top: 10px;
@@ -118,7 +128,9 @@ footer {
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
+/* Media Queries */
 
+/* Tablets >= 576px */
 @media (min-width: 576px) {
   body {
     grid-template-areas:
@@ -129,6 +141,7 @@ footer {
   }
 }
 
+/* Desktop >= 992px */
 @media (min-width: 992px) {
   body {
     grid-template-areas:
